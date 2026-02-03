@@ -139,6 +139,7 @@ const app = {
         //--------Tua bài-----------
         progressBar.onchange = function (e) {
             const seekTime = (audio.duration / 100) * e.target.value;
+            console.log(audio.duration);
             audio.currentTime = seekTime;
         }
         //----------Trộn bài-------
